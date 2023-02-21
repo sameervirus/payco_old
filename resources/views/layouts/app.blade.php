@@ -30,6 +30,33 @@
                     <div>
                         <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-52 -z-10 ">
                     </div>
+                    <div>
+                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1000px] -z-10 ">
+                    </div>
+                    <div>
+                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1300px] -z-10 ">
+                    </div>
+                    <div>
+                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1300px] -z-10 ">
+                    </div>
+                    <div>
+                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1500px] -z-10 ">
+                    </div>
+                    <div>
+                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1800px] -z-10 ">
+                    </div>
+                    <div>
+                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1800px] -z-10 ">
+                    </div>
+                    <div>
+                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[2000px] -z-10 ">
+                    </div>
+                    <div>
+                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-[2300px] -z-10 ">
+                    </div>
+                    <div>
+                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[2300px] -z-10 ">
+                    </div>
                     <div></div>
                 </div>
                 <div class="absolute left-0 top-0 min-h-[1290px] w-full -z-10 bg-cover" style="background-image: url('/images/1060_1.png')"></div>
@@ -47,9 +74,12 @@
                             <div class="inline-flex focus:outline-none logo ps-3 md:ps-0 lg:mx-0 h-8 lg:h-14">
                                 <img src="/images/logo.png" alt="Payco" />
                             </div>
-                            <button type="button" class="mobile-menu-button inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:bg-primary focus:text-white" aria-controls="navbar-default" aria-expanded="false">
+                            <button type="button" class="mobile-menu-button inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden">
                                 <span class="sr-only">Open main menu</span>
-                                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                                <svg id="svgE" class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                                <svg id="svgX" class="w-6 h-6 p-[4px] hidden" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" viewBox="0 0 460.775 460.775" xml:space="preserve">
+                                    <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55  c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55  c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505  c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55  l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719  c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"/>
+                                </svg>
                             </button>
                             <div class="hidden lg:flex content-between justify-between h-5 lg:min-w-[565px] text-white ">
                                 <a href="#" class="hover:text-primary">Home</a>
@@ -58,15 +88,15 @@
                                 <a href="#" class="hover:text-primary">blog</a>
                                 <a href="#" class="hover:text-primary">Contact Us</a>
                             </div>
-                            <div class="hidden lg:block px-6 py-4 rounded-full border-solid border-2 border-primary text-primary backdrop-blur-[20px] hover:text-white hover:bg-primary">
+                            <x-primary-button contentClasses="hidden lg:block border-primary text-primary hover:text-white hover:bg-primary">
                                 <a href="" class="uppercase font-medium text-lg ">Invest With Payco</a>
-                            </div>
+                            </x-primary-button>
                             <div class="hidden lg:flex items-center justify-between">
                                 <img src="/images/ic_baseline-account-circle.png" alt="avatar" class="">
                                 <span class="text-white pl-2">Jane Albert</span>
                             </div>
                         </div>
-                        <div class="flex flex-col lg:hidden mobile-menu text-white bg-primary">
+                        <div class="flex flex-col lg:hidden mobile-menu text-white bg-primary hidden">
                             <a href="#" class="py-2 px-4 border-b-2 border-b-white">Home</a>
                             <a href="#" class="py-2 px-4 border-b-2 border-b-white">About Us</a>
                             <a href="#" class="py-2 px-4 border-b-2 border-b-white">Products</a>
@@ -84,11 +114,15 @@
         <script>
             // Grab HTML Elements
             const btn = document.querySelector("button.mobile-menu-button");
+            const svgE = document.getElementById("svgE");
+            const svgX = document.getElementById("svgX");
             const menu = document.querySelector(".mobile-menu");
 
             // Add Event Listeners
             btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
+                menu.classList.toggle("hidden");
+                svgE.classList.toggle("hidden");
+                svgX.classList.toggle("hidden");
             });
         </script>
     </body>

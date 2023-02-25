@@ -13,5 +13,27 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(219 56 40);
+    background-color: rgb(220 79 59);
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item.active {
+    --tw-text-opacity: 1;
+    color: rgb(220 79 59 / var(--tw-text-opacity));
+}
+
+.nav-item.active::after,
+.nav-item:hover::after {
+    content: " ";
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: rgb(220 79 59 / var(--tw-text-opacity));
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: calc(50% - 3px);
 }

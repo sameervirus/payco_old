@@ -14,7 +14,7 @@ module.exports = {
                 sans: ["Poppins", ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                primary: "#db3828",
+                primary: "#DC4F3B",
             },
         },
     },

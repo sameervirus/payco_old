@@ -1,4 +1,5 @@
 <x-app-layout>
+    <div class="absolute left-0 top-0 min-h-[1290px] w-full -z-10 bg-cover" style="background-image: url('/images/1060_1.png');background-repeat: no-repeat;"></div>
     <div class="flex flex-col pt-12 lg:pt-32">
         <div class="flex justify-center items-center">
             <img src="/images/vector.png" alt="vector" class=" w-[18px] h-[22px]">
@@ -103,10 +104,10 @@
             </div>
         </section>
         <section class="flex flex-col w-full relative">
-            <div class="flex flex-col relative overflow-hidden items-center lg:my-16 lg:mx-8 lg:py-40 lg:px-16 border rounded-[20px] lg:rounded-[90px] rounded-br-none border-none"
+            <div class="flex flex-col relative overflow-hidden items-center lg:my-16 lg:mx-8 lg:py-16 lg:px-16 border rounded-[20px] lg:rounded-[90px] border-none rounded-br-none lg:rounded-br-none"
             style="background-image: url('/images/rectangle_9546.png')">
-            <div class="absolute left-0 top-0 w-full h-full bg-cover" style="background: linear-gradient(266.6deg, #94554A 1.04%, #5353A7 97.52%);opacity: 0.85;backdrop-filter: blur(5px);"></div>
-            <div class="absolute left-0 top-0 w-full h-full bg-cover" style="background-image: url('/images/mask-group.png')"></div>
+                <div class="absolute left-0 top-0 w-full h-full bg-cover" style="background: linear-gradient(266.6deg, #94554A 1.04%, #5353A7 97.52%);opacity: 0.85;backdrop-filter: blur(5px);"></div>
+                <div class="absolute left-0 top-0 w-full h-full bg-cover" style="background-image: url('/images/mask-group.png')"></div>
                 <div class="grid grid-cols-2 gap-2 lg:gap-8 items-center z-10 px-3 py-6 lg:py-10 lg:px-16 lg:mb-20">
                     <h2 class="text-sm lg:text-5xl font-extrabold leading-[30px] lg:leading-[85px] tracking-[-0.02em] text-white">Start investing your money with <img class="h-[15px] lg:h-12 inline-flex ml-2 -mt-2 lg:-mt-5" src="/images/white_logo.png" alt="" /></h2>
                     <p class="text-[10px] lg:text-[22px] font-light text-[#F2F2F2] lg:leading-[43px]">Our digital wallet and platform make it easy to send money internationally, issue letters of credit, and conduct transactions with confidence.</p>

@@ -51,14 +51,11 @@
                     <div>
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[2000px] -z-10 ">
                     </div>
-                    <div>
-                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-[2300px] -z-10 ">
-                    </div>
+
 
                 </div>
-                <div class="absolute left-0 top-0 min-h-[1290px] w-full -z-10 bg-cover" style="background-image: url('/images/1060_1.png');background-repeat: no-repeat;"></div>
                 <header class="py-0 px-0 lg:py-6 lg:px-8">
-                    <div class="mobile-menu h-screen w-full p-5">
+                    <div class="mobile-menu lg:hidden h-screen w-full p-5 fixed -left-[100%] duration-300 ease-out transition-all bg-[#1E1E1E] z-50">
                         <div class="flex justify-between items-center lg:hidden mb-10">
                             <div class="inline-flex focus:outline-none logo ps-3 md:ps-0 h-8">
                                 <img src="/images/logo.png" alt="Payco" />
@@ -81,12 +78,18 @@
                             <span class="text-white pl-2">Jane Albert</span>
                         </div>
                         <div class="flex flex-col text-white mt-10">
-                            <a href="#" class="py-4">Home</a>
-                            <a href="#" class="py-4">About Us</a>
+                            <a href="/" class="py-4">Home</a>
+                            <a href="/about-us" class="py-4">About Us</a>
                             <a href="#" class="py-4">Products</a>
                             <a href="#" class="py-4">blog</a>
                             <a href="#" class="py-4">Contact Us</a>
                         </div>
+                        <div class="text-center mt-5">
+                            <x-primary-button contentClasses="border-[#F4B554] text-[#F4B554]">
+                                <a href="" class="uppercase font-medium text-lg ">Invest With Payco</a>
+                            </x-primary-button>
+                        </div>
+
                     </div>
                     <div>
                         <div class="hidden lg:flex items-center justify-between 2xl:px-20 lg:px-8 md:px-6 mx-auto px-4 py-6 md:py-8 lg:py-10 bg-[#4b4b4b] lg:rounded-[40px] backdrop-blur-[2px]">
@@ -94,8 +97,8 @@
                                 <img src="/images/logo.png" alt="Payco" />
                             </div>
                             <div class="hidden lg:flex content-between justify-between h-5 lg:min-w-[565px] text-white ">
-                                <a href="#" class="nav-item active hover:text-primary">Home</a>
-                                <a href="#" class="nav-item hover:text-primary">About Us</a>
+                                <a href="/" class="nav-item {{ (request()->is('/')) ? 'active' : '' }} hover:text-primary">Home</a>
+                                <a href="/about-us" class="nav-item {{ (request()->is('about-us')) ? 'active' : '' }} hover:text-primary">About Us</a>
                                 <a href="#" class="nav-item hover:text-primary">Products</a>
                                 <a href="#" class="nav-item hover:text-primary">blog</a>
                                 <a href="#" class="nav-item hover:text-primary">Contact Us</a>
@@ -143,8 +146,8 @@
                                 <li><a class="text-sm lg:text-lg hover:text-primary" href="/blog">Blog</a></li>
                             </ul>
                         </div>
-                        <div class="hidden lg:col-span-1 text-white"></div>
-                        <div class="col-span-2 lg:col-span-4 text-white mt-5 lg:mt-0">
+                        <div class="hidden lg:block lg:col-span-2 text-white"></div>
+                        <div class="col-span-2 lg:col-span-3 text-white mt-5 lg:mt-0">
                             <h2 class="font-medium text-base lg:text-3xl mb-5">Catch us on</h2>
                             <div class="flex gap-3 lg:gap-5">
                                 <a href="/"><svg class="w-[38px] h-[38px] lg:w-[58px] lg:h-[58px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58" fill="none">
@@ -172,6 +175,7 @@
                 </footer>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script>
             // Grab HTML Elements
             const btn = document.querySelector("button.mobile-menu-button");
@@ -180,13 +184,26 @@
 
             // Add Event Listeners
             btn.addEventListener("click", () => {
-                console.log('oress')
-                menu.classList.toggle("hidden");
+                menu.classList.toggle("translate-x-full");
             });
             btnh.addEventListener("click", () => {
-                console.log('oress')
-                menu.classList.toggle("hidden");
+                menu.classList.toggle("translate-x-full");
             });
+            $(document).ready(function(){
+
+                $(".acc-head").click(function(e){
+                    const ele = $(this).data("id");
+                    e.preventDefault();
+                    $(".acc-head").each(function () { $(this).removeClass("active"); });
+                    $(this).addClass("active");
+                    $(".acc-body").each(function () { $(this).addClass("hidden"); });
+                    $('#sm-'+ ele).removeClass("hidden");
+                    $(".acc-lg-body").each(function () { $(this).addClass("translate-y-full bottom-0 opacity-0"); });
+                    $('#lg-'+ ele).removeClass("translate-y-full bottom-0 opacity-0").addClass('top-0');
+                });
+            });
+
+
         </script>
     </body>
 </html>

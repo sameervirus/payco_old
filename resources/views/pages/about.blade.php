@@ -112,4 +112,17 @@
             </div>
         </div>
     </section>
+    <section class="flex flex-col mx-5 lg:mx-20 mb-10 mt-20 lg:mt-32">
+        <div>
+            <x-section-title><span class="text-primary">B</span>oarding Members</x-section-title>
+            <x-section-subtitle>Meet our team of Experts</x-section-subtitle>
+        </div>
+        <div class="grid grid-col-1 lg:grid-cols-4 gap-8 mt-20">
+            <x-about-team name="Bishoy" text="CEO of PAYCO" img="team1.jpg"></x-about-team>
+            <x-about-team name="Dr. Moenes Iskarous" text="" img="team2.jpg"></x-about-team>
+            <x-about-team name="Dr. Mattia Rattaggi" text="" img="team3.jpg"></x-about-team>
+            <x-about-team name="Khaled Serif" text="CTO" img="team4.jpg"></x-about-team>
+        </div>
+    </section>
+    <div class="min-h-[100px] lg:min-h-[300px]"></div>
 </x-app-layout>

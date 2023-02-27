@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-
+        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -42,13 +42,13 @@
                     <div>
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1500px] -z-10 ">
                     </div>
-                    <div>
+                    <div class="{{ in_array(Route::currentRouteName(), ['about']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1800px] -z-10 ">
                     </div>
-                    <div>
-                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1800px] -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1600px] -z-10 ">
                     </div>
-                    <div>
+                    <div class="{{ in_array(Route::currentRouteName(), ['about']) ? 'hidden' : '' }}">
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[2000px] -z-10 ">
                     </div>
 

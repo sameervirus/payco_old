@@ -42,3 +42,24 @@
     --tw-text-opacity: 1;
     color: rgb(220 79 59 / var(--tw-text-opacity));
 }
+
+.head_line::after {
+    content: " ";
+    width: 124px;
+    height: 19px;
+    background-color: rgb(220 79 59 / var(--tw-text-opacity));
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    z-index: -1;
+}
+
+select {
+    background-image: url("../../public/images/select-arrow.png");
+    background-size: 12px 9px;
+    background-position: right 2rem center;
+}
+
+[type="submit"].bg-primary-class {
+    background-color: rgb(220 79 59 / var(--tw-text-opacity));
+}

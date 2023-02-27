@@ -57,8 +57,8 @@
                 <header class="py-0 px-0 lg:py-6 lg:px-8">
                     <div class="mobile-menu lg:hidden h-screen w-full p-5 fixed -left-[100%] duration-300 ease-out transition-all bg-[#1E1E1E] z-50">
                         <div class="flex justify-between items-center lg:hidden mb-10">
-                            <div class="inline-flex focus:outline-none logo ps-3 md:ps-0 h-8">
-                                <img src="/images/logo.png" alt="Payco" />
+                            <div class="inline-flex focus:outline-none logo ps-3 md:ps-0 lg:mx-0">
+                                <a class="flex h-8 lg:h-14" href="{{route('home')}}"><img src="/images/logo.png" alt="Payco" /></a>
                             </div>
                             <button type="button" class="mobile-menu-hide inline-flex items-center p-2 mx-3 text-sm rounded-lg md:hidden">
                                 <span class="sr-only">Open main menu</span>

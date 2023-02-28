@@ -45,13 +45,21 @@
 
 .head_line::after {
     content: " ";
-    width: 124px;
-    height: 19px;
+    width: 70px;
+    height: 7px;
     background-color: rgb(220 79 59 / var(--tw-text-opacity));
     position: absolute;
-    bottom: 3px;
+    bottom: 2px;
     left: 0;
     z-index: -1;
+}
+
+@media (min-width: 1024px) {
+    .head_line::after {
+        width: 124px;
+        height: 19px;
+        bottom: -12px;
+    }
 }
 
 select {
@@ -62,4 +70,8 @@ select {
 
 [type="submit"].bg-primary-class {
     background-color: rgb(220 79 59 / var(--tw-text-opacity));
+}
+
+.error {
+    color: rgb(220 79 59);
 }

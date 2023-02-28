@@ -11,7 +11,6 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -23,10 +22,13 @@
                         <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-0 -z-10 ">
                     </div>
                     <div>
-                        <img src="/images/rectangle_9551.png" alt="" class="absolute -z-10 ">
+                        <img src="/images/rectangle_9551.png" alt="" class="absolute min-h-[380px] lg:min-h-[1144px] -z-10 ">
                     </div>
                     <div>
-                        <img src="/images/rectangle_9534qq.png" alt="" class="absolute -z-10 ">
+                        <img src="/images/rectangle_9534qq.png" alt="" class="absolute top-80 lg:top-0 -z-10 ">
+                    </div>
+                    <div>
+                        <img src="/images/rectangle_9627.png" alt="" class="lg:hidden absolute top-80 lg:top-0 -z-10 ">
                     </div>
 
 
@@ -78,13 +80,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute opacity-20 left-0 top-0 min-h-[1144px] w-full -z-20 bg-cover" style="background-image: url('/images/bg-gust.png');background-repeat: no-repeat;"></div>
+                    <div class="absolute opacity-20 left-0 top-0 min-h-[380px] lg:min-h-[1144px] w-full -z-20 bg-cover" style="background-image: url('/images/bg-gust.png');background-repeat: no-repeat;"></div>
                 </header>
                 <main>
                     {{ $slot }}
                 </main>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
         <script>
             // Grab HTML Elements
             const btn = document.querySelector("button.mobile-menu-button");

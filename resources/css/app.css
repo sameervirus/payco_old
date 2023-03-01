@@ -72,6 +72,14 @@ select {
     background-color: rgb(220 79 59 / var(--tw-text-opacity));
 }
 
+[type="submit"].bg-primary-class:disabled {
+    background-color: #ddd;
+}
+
 .error {
     color: rgb(220 79 59);
+}
+
+#passwordForm .valid {
+    background-color: #4dbc18;
 }

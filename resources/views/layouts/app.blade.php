@@ -12,7 +12,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -75,7 +74,11 @@
                         </div>
                         <div class="flex items-center">
                             <img src="/images/ic_baseline-account-circle.png" alt="avatar" class="h-[30px]">
-                            <span class="text-white pl-2">Jane Albert</span>
+                            @auth
+                            <span class="text-white pl-2">{{ auth()->user()->name }}</span>
+                            @else
+                            <a class="text-white pl-2" href="/login">Login</a>
+                            @endauth
                         </div>
                         <div class="flex flex-col text-white mt-10">
                             <a href="/" class="py-4">Home</a>
@@ -108,7 +111,11 @@
                             </x-primary-button>
                             <div class="hidden lg:flex items-center justify-between">
                                 <img src="/images/ic_baseline-account-circle.png" alt="avatar" class="">
-                                <span class="text-white pl-2">Jane Albert</span>
+                                @auth
+                                <span class="text-white pl-2">{{ auth()->user()->name }}</span>
+                                @else
+                                <a class="text-white pl-2" href="/login">Login</a>
+                                @endauth
                             </div>
                         </div>
                         <div class="flex lg:hidden py-6">
@@ -175,35 +182,5 @@
                 </footer>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <script>
-            // Grab HTML Elements
-            const btn = document.querySelector("button.mobile-menu-button");
-            const btnh = document.querySelector("button.mobile-menu-hide");
-            const menu = document.querySelector(".mobile-menu");
-
-            // Add Event Listeners
-            btn.addEventListener("click", () => {
-                menu.classList.toggle("translate-x-full");
-            });
-            btnh.addEventListener("click", () => {
-                menu.classList.toggle("translate-x-full");
-            });
-            $(document).ready(function(){
-
-                $(".acc-head").click(function(e){
-                    const ele = $(this).data("id");
-                    e.preventDefault();
-                    $(".acc-head").each(function () { $(this).removeClass("active"); });
-                    $(this).addClass("active");
-                    $(".acc-body").each(function () { $(this).addClass("hidden"); });
-                    $('#sm-'+ ele).removeClass("hidden");
-                    $(".acc-lg-body").each(function () { $(this).addClass("translate-y-full bottom-0 opacity-0"); });
-                    $('#lg-'+ ele).removeClass("translate-y-full bottom-0 opacity-0").addClass('top-0');
-                });
-            });
-
-
-        </script>
     </body>
 </html>

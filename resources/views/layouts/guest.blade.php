@@ -53,8 +53,13 @@
                             </button>
                         </div>
                         <div class="flex items-center">
+                            @if(request()->is('login'))
+                            <a href="{{route('register')}}"><img src="/images/ic_baseline-account-circle.png" alt="avatar" class="h-[30px]"></a>
+                            <a href="{{route('register')}}"><span class="text-white pl-2">Create an Account</span></a>
+                            @else
                             <a href="{{route('login')}}"><img src="/images/ic_baseline-account-circle.png" alt="avatar" class="h-[30px]"></a>
                             <a href="{{route('login')}}"><span class="text-white pl-2">Login</span></a>
+                            @endif
                         </div>
                     </div>
                     <div>
@@ -64,8 +69,13 @@
                             </div>
 
                             <div class="hidden lg:flex items-center justify-between">
+                                @if(request()->is('login'))
+                                <a href="{{route('register')}}"><img src="/images/ic_baseline-account-circle.png" alt="avatar" class=""></a>
+                                <a href="{{route('register')}}"><span class="text-white pl-2">Create an Account</span></a>
+                                @else
                                 <a href="{{route('login')}}"><img src="/images/ic_baseline-account-circle.png" alt="avatar" class=""></a>
                                 <a href="{{route('login')}}"><span class="text-white pl-2">Login</span></a>
+                                @endif
                             </div>
                         </div>
                         <div class="flex lg:hidden py-6">
@@ -87,8 +97,7 @@
                 </main>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+
         <script>
             // Grab HTML Elements
             const btn = document.querySelector("button.mobile-menu-button");

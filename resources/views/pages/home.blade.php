@@ -41,16 +41,6 @@
                 <a href="#" class="uppercase font-medium lg:text-lg">Invest With Payco</a>
             </x-primary-button>
         </div>
-        <div class="hidden grid lg:grid-cols-2 gap-10 justify-center items-center mt-20 lg:mt-40 py-12 lg:py-20 lg:px-28 ">
-            <div class="flex items-center mx-5 px-6 lg:px-12 py-10 lg:py-4 rounded-[20px] border-solid border-2 border-[#848484] backdrop-blur-[10px]">
-                <h2 class="text-[#FFD5BA] text-xl lg:text-3xl uppercase leading-[20px] lg:leading-[45px]">Personal Money Remittance and Social Payments</h2>
-                <img class="w-[125px] lg:w-[225px] -mt-16" src="/images/990_3.png" alt="Personal Money Remittance and Social Payments">
-            </div>
-            <div class="flex items-center mx-5 px-6 lg:px-12 py-10 lg:py-4 rounded-[20px] border-solid border-2 border-[#848484] backdrop-blur-[10px]">
-                <h2 class="text-[#FFD5BA] text-xl lg:text-3xl uppercase leading-[20px] lg:leading-[45px]">Business Letters of Credit and Point of sale services for businesses</h2>
-                <img class="w-[150px] lg:w-[303px] -mt-[68px] -mr-8 lg:-mr-16" src="/images/990_4.png" alt="Personal Money Remittance and Social Payments">
-            </div>
-        </div>
         <div class="grid grid-cols-1 lg:grid-cols-10 lg:justify-between items-center px-5 lg:px-36 mt-20 backdrop-blur-[5px]">
             <div class="flex lg:col-span-5 lg:min-w-[553px] py-5 lg:py-24 items-center text-white uppercase font-light lg:text-[26px]">
                 <img class="w-[47px] h-[47px] lg:w-[73px] lg:h-[73px] mr-4 lg:mr-8" src="images/payment1.svg" alt="Payment" />
@@ -84,28 +74,58 @@
                 <x-section-title><span class="text-primary">T</span>estmonials</x-section-title>
                 <x-section-subtitle>What our customer are saying...</x-section-subtitle>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mx-0 lg:mx-28 lg:mt-6">
-                <x-testmonials-card
-                    img="ellipse_1.png"
-                    text="Investing with Payco was a really nice experience as i could make payments anywhere around the world with single click in addition keeping my money safely"
-                    name="Stephen Brekke"
-                />
-                <x-testmonials-card
-                    img="ellipse_2.png"
-                    text="Investing with Payco was a really nice experience as i could make payments anywhere around the world with single click in addition keeping my money safely"
-                    name="Stephen Brekke"
-                />
-                <x-testmonials-card
-                    img="ellipse_3.png"
-                    text="Investing with Payco was a really nice experience as i could make payments anywhere around the world with single click in addition keeping my money safely"
-                    name="Stephen Brekke"
-                />
-            </div>
-            <div class="flex gap-4 my-5 lg:my-10 lg:mx-28 justify-center">
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="20.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)" stroke="white" stroke-opacity="0.3"/>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <x-testmonials-card
+                                img="ellipse_1.png"
+                                text="Investing with Payco was a really nice experience as i could make payments anywhere around the world with single click in addition keeping my money safely"
+                                name="Stephen Brekke"
+                            />
+                        </li>
+                        <li class="glide__slide">
+                            <x-testmonials-card
+                                img="ellipse_2.png"
+                                text="Investing with Payco was a really nice experience as i could make payments anywhere around the world with single click in addition keeping my money safely"
+                                name="Stephen Brekke"
+                            />
+                        </li>
+                        <li class="glide__slide">
+                            <x-testmonials-card
+                                img="ellipse_3.png"
+                                text="Investing with Payco was a really nice experience as i could make payments anywhere around the world with single click in addition keeping my money safely"
+                                name="Stephen Brekke"
+                            />
+                        </li>
+                        <li class="glide__slide">
+                            <x-testmonials-card
+                                img="ellipse_1.png"
+                                text="Investing with Payco was a really nice experience as i could make payments anywhere around the world with single click in addition keeping my money safely"
+                                name="Stephen Brekke"
+                            />
+                        </li>
+                        <li class="glide__slide">
+                            <x-testmonials-card
+                                img="ellipse_2.png"
+                                text="Investing with Payco was a really nice experience as i could make payments anywhere around the world with single click in addition keeping my money safely"
+                                name="Stephen Brekke"
+                            />
+                        </li>
+                        <li class="glide__slide">
+                            <x-testmonials-card
+                                img="ellipse_3.png"
+                                text="Investing with Payco was a really nice experience as i could make payments anywhere around the world with single click in addition keeping my money safely"
+                                name="Stephen Brekke"
+                            />
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex gap-4 my-5 lg:my-10 lg:mx-28 justify-center"  data-glide-el="controls">
+                <svg class="glide__arrow glide__arrow--left" data-glide-dir="<" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="21" cy="21" r="20.5" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)" stroke="white" />
                     <g clip-path="url(#clip0_123_2709)">
-                    <path d="M23.4042 24.4292L22.6667 25.1667L18.5 21.0001L22.6667 16.8334L23.4042 17.5709L19.975 21.0001L23.4042 24.4292Z" fill="white" fill-opacity="0.3"/>
+                    <path d="M23.4042 24.4292L22.6667 25.1667L18.5 21.0001L22.6667 16.8334L23.4042 17.5709L19.975 21.0001L23.4042 24.4292Z" fill="white" />
                     </g>
                     <defs>
                     <clipPath id="clip0_123_2709">
@@ -114,7 +134,7 @@
                     </defs>
                 </svg>
 
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="glide__arrow glide__arrow--right" data-glide-dir=">" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="21" cy="21" r="20.5" transform="rotate(90 21 21)" stroke="white"/>
                     <g clip-path="url(#clip0_123_2708)">
                     <path d="M18.5958 24.4292L19.3333 25.1667L23.5 21.0001L19.3333 16.8334L18.5958 17.5709L22.025 21.0001L18.5958 24.4292Z" fill="white"/>
@@ -126,6 +146,9 @@
                     </defs>
                 </svg>
             </div>
+            </div>
+
+
         </section>
         <section class="flex flex-col w-full relative">
             <div class="flex flex-col relative overflow-hidden items-center lg:my-16 lg:mx-8 lg:py-16 lg:px-16 border rounded-[20px] lg:rounded-[90px] border-none rounded-br-none lg:rounded-br-none"

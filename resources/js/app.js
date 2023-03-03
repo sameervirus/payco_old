@@ -1,4 +1,5 @@
 import Alpine from "alpinejs";
+import Glide from "@glidejs/glide";
 
 window.Alpine = Alpine;
 
@@ -6,6 +7,28 @@ Alpine.start();
 import $ from "jquery";
 import validate from "jquery-validation";
 window.$ = $;
+const config = {
+    type: "slider",
+    startAt: 0,
+    perView: 3,
+    gap: 32,
+    rewind: false,
+    bound: true,
+    breakpoints: {
+        1280: {
+            perView: 3,
+        },
+        1024: {
+            perView: 2,
+        },
+        768: {
+            perView: 1,
+        },
+    },
+};
+if ($(".glide").length > 0) {
+    new Glide(".glide", config).mount();
+}
 
 // Grab HTML Elements
 const btn = document.querySelector("button.mobile-menu-button");

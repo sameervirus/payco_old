@@ -12,6 +12,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+                mono: ["Montserrat", ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 primary: "#DC4F3B",

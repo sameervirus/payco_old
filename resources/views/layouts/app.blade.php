@@ -11,44 +11,45 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased bg-black">
+    <body class="antialiased bg-black font-sans overflow-x-hidden relative">
         <div class="min-h-screen">
 
             <div id="content-warp" class="" >
                 <div id="bg-colors">
-                    <div>
-                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-0 -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-0 -z-20 ">
                     </div>
-                    <div>
-                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-40 -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-40 -z-20 ">
                     </div>
-                    <div>
-                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-52 -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-52 -z-20 ">
                     </div>
-                    <div>
-                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1000px] -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1000px] -z-20 ">
                     </div>
-                    <div>
-                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1300px] -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1300px] -z-20 ">
                     </div>
-                    <div>
-                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1300px] -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1300px] -z-20 ">
                     </div>
-                    <div>
-                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1500px] -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['products', 'invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[1500px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['about']) ? 'hidden' : '' }}">
-                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1800px] -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9534.png" alt="" class="absolute top-[1800px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['about']) ? 'hidden' : '' }}">
-                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1600px] -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9532.png" alt="" class="absolute right-0 top-[1600px] -z-20 ">
                     </div>
-                    <div class="{{ in_array(Route::currentRouteName(), ['about']) ? 'hidden' : '' }}">
-                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[2000px] -z-10 ">
+                    <div class="{{ in_array(Route::currentRouteName(), ['about', 'products', 'invset']) ? 'hidden' : '' }}">
+                        <img src="/images/rectangle_9535.png" alt="" class="absolute right-0 top-[2000px] -z-20 ">
                     </div>
 
 
@@ -83,31 +84,31 @@
                         <div class="flex flex-col text-white mt-10">
                             <a href="/" class="py-4">Home</a>
                             <a href="/about-us" class="py-4">About Us</a>
-                            <a href="#" class="py-4">Products</a>
+                            <a href="/products" class="py-4">Products</a>
                             <a href="#" class="py-4">blog</a>
                             <a href="#" class="py-4">Contact Us</a>
                         </div>
                         <div class="text-center mt-5">
                             <x-primary-button contentClasses="border-[#F4B554] text-[#F4B554]">
-                                <a href="" class="uppercase font-medium text-lg ">Invest With Payco</a>
+                                <a href="/invset" class="uppercase font-medium text-lg ">Invest With Payco</a>
                             </x-primary-button>
                         </div>
 
                     </div>
                     <div>
-                        <div class="hidden lg:flex items-center justify-between 2xl:px-20 lg:px-8 md:px-6 mx-auto px-4 py-6 md:py-8 lg:py-10 bg-[#4b4b4b] lg:rounded-[40px] backdrop-blur-[2px]">
+                        <div class="hidden lg:flex items-center justify-between 2xl:px-20 lg:px-8 md:px-6 mx-auto px-4 py-6 md:py-8 lg:py-10 bg-[#4b4b4b66] lg:rounded-[40px] backdrop-blur-[2px]">
                             <div class="inline-flex focus:outline-none logo ps-3 md:ps-0 lg:mx-0 h-8 lg:h-14">
                                 <img src="/images/logo.png" alt="Payco" />
                             </div>
                             <div class="hidden lg:flex content-between justify-between h-5 lg:min-w-[565px] text-white ">
                                 <a href="/" class="nav-item {{ (request()->is('/')) ? 'active' : '' }} hover:text-primary">Home</a>
                                 <a href="/about-us" class="nav-item {{ (request()->is('about-us')) ? 'active' : '' }} hover:text-primary">About Us</a>
-                                <a href="#" class="nav-item hover:text-primary">Products</a>
+                                <a href="/products" class="nav-item {{ (request()->is('products')) ? 'active' : '' }} hover:text-primary">Products</a>
                                 <a href="#" class="nav-item hover:text-primary">blog</a>
                                 <a href="#" class="nav-item hover:text-primary">Contact Us</a>
                             </div>
                             <x-primary-button contentClasses="hidden lg:block lg:px-6 border-[#F4B554] text-[#F4B554] hover:text-white hover:bg-primary hover:border-primary">
-                                <a href="" class="uppercase font-medium text-lg ">Invest With Payco</a>
+                                <a href="/invset" class="uppercase font-medium text-lg ">Invest With Payco</a>
                             </x-primary-button>
                             <div class="hidden lg:flex items-center justify-between">
                                 <img src="/images/ic_baseline-account-circle.png" alt="avatar" class="">
